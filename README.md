@@ -1,18 +1,25 @@
 # docker-debian
-Dockerfile for quick usable debian 
-Installs vim, wget, curl and basic networking tools.
+Dockerfile for quick node scripting
 
-TL;DR:
+## TL;DR
 ```
-docker run -it sverrirab/debian bash
+docker run -it sverrirab/node
 ```
+
+This will start a node shell directly.
+
+## Usage
+
+If you want to build / use node from within the container:
+
+```
+docker run -it --entrypoint bash sverrirab/node
+```
+
+## Building
 
 Build yourself using:  
 ```
-docker build -t sverrirab/debian .
+docker build -t sverrirab/node .
 ```
 
-And run your build:
-```
-docker run -it sverrirab/debian bash
-```
